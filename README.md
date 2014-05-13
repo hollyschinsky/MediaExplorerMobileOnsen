@@ -6,11 +6,11 @@ iTunes Media Explorer mobile application sample written with Cordova+OnsenUI (An
 #### Create Project
 You can create your own new project locally using the Cordova CLI based on my code (after you've cloned or downloaded) with:
 
-$ cordova create MyMediaExplorerOnsen "com.mediaexplorer.app" "MediaExplorerOnsenApp" --copy-from /MediaExplorerMobileOnsen/www
+    $ cordova create MyMediaExplorerOnsen "com.mediaexplorer.app" "MediaExplorerOnsenApp" --copy-from /MediaExplorerMobileOnsen/www
 
 Or create a new project and manually replace the www folder with mine.
 
-$ cordova create MyMediaExplorerOnsen
+    $ cordova create MyMediaExplorerOnsen
 
 #### Add Plugins
 
@@ -23,4 +23,4 @@ The following plugins should be added to this application:
 
 #### Run
 
-$ cordova run ios
+    $ cordova run ios
