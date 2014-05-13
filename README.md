@@ -1,7 +1,13 @@
 MediaExplorerMobileOnsen
 ========================
 
-iTunes Media Explorer mobile application sample written with Cordova+OnsenUI (AngularJS+Topcoat).
+iTunes Media Explorer mobile application sample written with [Cordova](http://cordova.apache.org/) and [OnsenUI](http://http://onsenui.io/)
+
+- Try the [hosted sample](http://devgirl.org/files/MediaExplorerMobileOnsenUI/www/)
+
+- [Read more](http://devgirl.org/) about it
+
+##Run it yourself
 
 #### Create Project
 You can create your own new project locally using the Cordova CLI based on my code (after you've cloned or downloaded) with:
