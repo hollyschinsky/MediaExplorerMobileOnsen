@@ -9,7 +9,8 @@
   <link rel="stylesheet" href="lib/onsen/css/topcoat-mobile-onsen-ios7.css">
   <link rel="stylesheet" href="styles/app.css"/>
 
-  <!-- cordova -->
+  <!-- cordova.js or phonegap.js depending on which CLI used - automatically added into project when
+       using the CLI to build and run the application -->
   <script src="cordova.js"></script>
 
   <script src="lib/onsen/js/angular/angular.js"></script>
@@ -24,9 +25,24 @@
 
 <body>
 
+    <!-- The sliding menu will show full screen and cover the status bar in iOS7. If you don't want this and want
+         it to look more like iOS6 then be sure to add the StatusBarPlugin from the project readme and set the
+         preference in your config.xml for the status bar overlay to false. I left some code in below to help
+         handle this, you can look at the different options supported for the StatusBar plugin at
+         http://plugins.cordova.io/#/package/org.apache.cordova.statusbar.
+
+        You could also add these preferences to the config.xml for the iOS platform in place of the code below
+        (note, these prefs may not yet be supported by PG Build)
+
+        <preference name="StatusBarBackgroundColor" value="#C9C9C9" />
+        <preference name="StatusBarOverlaysWebView" value="false" />
+    -->
     <script language="javascript">
         document.addEventListener('deviceready', function () {
-            StatusBar.styleBlackTranslucent;
+            // Sample code for Status Bar handling depending on preferences
+            // StatusBar.overlaysWebView(false);                                 defaults to true
+            // StatusBar.backgroundColorByHexString("#C9C9C9");                  defaults to black
+            // StatusBar.styleDefault();                                         dark text on lighter bg
         })
     </script>
 

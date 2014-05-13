@@ -23,19 +23,19 @@
                 </ons-row>
              </ons-list-item>
 
-            <ons-row class="blue">
-                <ons-col align="center" size="20">Cover</ons-col>
-                <ons-col align="center">Track</ons-col>
-                <ons-col align="center" size="20">Price</ons-col>
+            <ons-row class="blue" align="center">
+                <ons-col>Cover</ons-col>
+                <ons-col>Track</ons-col>
+                <ons-col>Price</ons-col>
             </ons-row>
 
              <ons-list-item class="topcoat-list__item__line-height topcoat-list__item--tappable"
                            ng-repeat="item in mediaResults.results | filter:filterTerm | orderBy:sortBy"
                            ng-click="checkMedia(item)">
-                <ons-row>
-                    <ons-col align="top" size="20"><img id="img" ng-src="{{item.artworkUrl60}}"/></ons-col>
-                    <ons-col align="top">{{(item.trackName != null) && item.trackName || item.collectionName}}</ons-col>
-                    <ons-col align="top" size="20">{{item.trackPrice}}</ons-col>
+                <ons-row align="center">
+                    <ons-col><img id="img" ng-src="{{item.artworkUrl60}}"/></ons-col>
+                    <ons-col offset="33">{{(item.trackName != null) && item.trackName || item.collectionName}}</ons-col>
+                    <ons-col>{{item.trackPrice}}</ons-col>
                 </ons-row>
              </ons-list-item>
 
