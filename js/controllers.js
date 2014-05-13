@@ -116,6 +116,7 @@ mediaApp.controller('SortCtrl', function ($scope,SettingsService,$rootScope) {
 
         $scope.saveSort = function() {
             console.log("This filter " + $scope.filterTerm + " sort " + $scope.sortBy);
+            /* BAD PRACTICE NOTED (using $rootScope) :) */
             $rootScope.sortBy = $scope.sortBy;
             $rootScope.filterTerm = $scope.filterTerm;
             SettingsService.set('filterTerm',$scope.filterTerm);
