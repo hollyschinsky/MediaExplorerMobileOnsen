@@ -14,13 +14,16 @@ Or create a new project and manually replace the www folder with mine.
 
 #### Add Plugins
 
-The following plugins should be added to this application:
+Add the following plugins to the application:
 
-- $ cordova plugin add org.apache.cordova.console 
-- $ cordova plugin add org.apache.cordova.device 
-- $ cordova plugin add org.apache.cordova.inappbrowser 
-- $ cordova plugin add org.apache.cordova.statusbar
+    $ cordova plugin add org.apache.cordova.console 
+    $ cordova plugin add org.apache.cordova.device 
+    $ cordova plugin add org.apache.cordova.inappbrowser 
+    $ cordova plugin add org.apache.cordova.statusbar
 
-#### Run
+#### Add a Platform
+    $ cordova platform add ios
+
+#### Run the App
 
     $ cordova run ios
