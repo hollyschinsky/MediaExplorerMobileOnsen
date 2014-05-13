@@ -5,7 +5,7 @@ iTunes Media Explorer mobile application sample written with [Cordova](http://co
 
 - Try the [hosted sample](http://devgirl.org/files/MediaExplorerMobileOnsenUI/www/)
 
-- [Read more](http://devgirl.org/) about it
+- [Read more](http://devgirl.org/2014/05/13/sample-phonegap-application-with-angularjsonsenui/) about it
 
 ##Run it yourself
 
