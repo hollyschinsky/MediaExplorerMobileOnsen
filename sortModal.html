@@ -1,0 +1,20 @@
+<ons-page class="center" ng-controller="SortCtrl">
+    <div>
+        <div class="topcoat-list__item__line-height">
+            <label style="margin-right: 5px;">Sort by
+                <ons-select ng-model="sortBy">
+                    <option value="artistName">Artist</option>
+                    <option value="collectionName">Collection Name</option>
+                    <option value="wrapperType">Media Item Name</option>
+                    <option value="kind">Media Type</option>
+                </ons-select>
+            </label>
+        </div>
+        <div>
+            <label>Filter by
+                <ons-text-input type="text" ng-model="filterTerm"> </ons-text-input>
+            </label>
+        </div>
+        <ons-button class="button" ng-click="saveSort()" type="cta-large">Apply</ons-button>
+    </div>
+</ons-page>

@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en" ng-app="mediaApp">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>iTunes Media Explorer</title>
+  
+  <link rel="stylesheet" href="lib/onsen/css/onsenui.css">  
+  <link rel="stylesheet" href="lib/onsen/css/topcoat-mobile-onsen-ios7.css">
+  <link rel="stylesheet" href="styles/app.css"/>
+
+  <!-- cordova -->
+  <script src="cordova.js"></script>
+
+  <script src="lib/onsen/js/angular/angular.js"></script>
+  <script src="lib/angular-resource.js"></script>
+  <script src="lib/onsen/js/onsenui.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/controllers.js"></script>
+  <script src="js/services.js"></script>
+  <script src="js/filters.js"></script>
+  <script src="js/directives.js"></script>
+</head>
+
+<body>
+
+    <script language="javascript">
+        document.addEventListener('deviceready', function () {
+            StatusBar.styleBlackTranslucent;
+        })
+    </script>
+
+    <ons-screen>
+        <ons-sliding-menu
+          behind-page="menu.html"
+          above-page="homeNav.html">
+        </ons-sliding-menu>
+    </ons-screen>
+
+</body>
+</html>

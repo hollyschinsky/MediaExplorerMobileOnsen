@@ -1,0 +1,69 @@
+<ons-page class="center white" ng-controller="SettingsCtrl">
+
+    <ons-list>
+        <ons-list-item class="topcoat-list__item__line-height">
+            <ons-row>
+                <ons-col size="25">
+                Video
+                </ons-col>
+                <ons-col class="pad" size="75">
+                    <label class="topcoat-switch" >
+                        <input type="checkbox" class="topcoat-switch__input"
+                               ng-model="video"
+                               ng-checked="true">
+                        <div class="topcoat-switch__toggle"></div>
+                    </label>
+                </ons-col>
+            </ons-row>
+        </ons-list-item>
+
+        <ons-list-item class="topcoat-list__item__line-height">
+            <ons-row>
+                <ons-col size="25">
+                Audio
+                </ons-col>
+                <ons-col class="pad" size="75">
+                    <label class="topcoat-switch">
+                        <input type="checkbox" class="topcoat-switch__input"
+                               ng-model="audio"
+                               ng-checked="true">
+                        <div class="topcoat-switch__toggle"></div>
+
+                    </label>
+                </ons-col>
+            </ons-row>
+        </ons-list-item>
+
+        <ons-list-item class="topcoat-list__item__line-height">
+            <ons-row>
+                <ons-col size="25">
+                    Volume
+                </ons-col>
+                <ons-col class="pad" size="75">
+                    <label for="volume">
+                        <i class="fa fa-volume-down"></i>
+                        <input type="range" id="volume" class="topcoat-range">
+                        <i class="fa fa-volume-up"></i>
+                    </label>
+                </ons-col>
+            </ons-row>
+        </ons-list-item>
+
+        <ons-list-item class="topcoat-list__item__line-height">
+            <ons-row>
+                <ons-col size="25">
+                    # Results
+                </ons-col>
+                <ons-col class="pad" size="75">
+                    <ons-select id="results" ng-model="maxResults" ng-change="changeNumResults()">
+                        <option value="25">25</option>
+                        <option value="50">50</option>
+                        <option value="100">100</option>
+                        <option value="200">200</option>
+                    </ons-select>
+                </ons-col>
+            </ons-row>
+        </ons-list-item>
+    </ons-list>
+
+</ons-page>

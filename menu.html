@@ -1,0 +1,36 @@
+<ons-page id="menu">
+    <ons-list>
+        <ons-list-item
+                class="topcoat-list__item--tappable topcoat-list__item__line-height"
+                ng-click="ons.slidingMenu.toggleMenu();
+			    ons.slidingMenu.setAbovePage('homeNav.html')">
+            <i class="fa fa-home fa-lg" style="color: #666"></i>
+            &nbsp; Home
+        </ons-list-item>
+
+        <ons-list-item
+                class="topcoat-list__item--tappable topcoat-list__item__line-height"
+                ng-click="ons.slidingMenu.toggleMenu();
+                ons.slidingMenu.setAbovePage('searchNav.html')">
+            <i class="fa fa-search fa-lg" style="color: #666"></i>
+            &nbsp; Search
+        </ons-list-item>
+
+		<ons-list-item 
+                class="topcoat-list__item--tappable topcoat-list__item__line-height"
+                ng-click="ons.slidingMenu.toggleMenu();
+                ons.slidingMenu.setAbovePage('settingsNav.html')">
+			<i class="fa fa-gear fa-lg" style="color: #666"></i>
+			&nbsp; Settings
+		</ons-list-item>
+
+        <ons-list-item
+                class="topcoat-list__item--tappable topcoat-list__item__line-height"
+                ng-click="ons.slidingMenu.toggleMenu();
+			ons.slidingMenu.setAbovePage('aboutNav.html')">
+            <i class="fa fa-info-circle fa-lg" style="color: #666"></i>
+            &nbsp; About
+        </ons-list-item>
+	</ons-list>
+
+</ons-page>

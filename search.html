@@ -1,0 +1,44 @@
+<ons-page class="center bgSearch" ng-controller="SearchCtrl">
+     <ons-scroller>
+         <ons-list>
+
+             <ons-list-item>
+                <ons-row style="margin-left: -10px">
+                    <ons-col size="33" class="pad">
+                        <ons-select ng-model="mediaTypes.type" ng-change="search()">
+                            <option value="all" selected>All Media</option>
+                            <option value="musicVideo">Video</option>
+                            <option value="movie">Movie</option>
+                            <option value="music">Music</option>
+                            <option value="podcast">Podcast</option>
+                            <option value="tvShow">TV Show</option>
+                        </ons-select>
+                    </ons-col>
+                    <ons-col size="50" class="pad">
+                        <ons-search-input ng-model="request.query" placeholder="Search"></ons-search-input>
+                    </ons-col>
+                    <ons-col>
+                        <ons-button type="cta" ng-click="search()" style="margin-bottom: 3px; margin-top: 3px">Go!</ons-button>
+                    </ons-col>
+                </ons-row>
+             </ons-list-item>
+
+            <ons-row class="blue">
+                <ons-col align="center" size="20">Cover</ons-col>
+                <ons-col align="center">Track</ons-col>
+                <ons-col align="center" size="20">Price</ons-col>
+            </ons-row>
+
+             <ons-list-item class="topcoat-list__item__line-height topcoat-list__item--tappable"
+                           ng-repeat="item in mediaResults.results | filter:filterTerm | orderBy:sortBy"
+                           ng-click="checkMedia(item)">
+                <ons-row>
+                    <ons-col align="top" size="20"><img id="img" ng-src="{{item.artworkUrl60}}"/></ons-col>
+                    <ons-col align="top">{{(item.trackName != null) && item.trackName || item.collectionName}}</ons-col>
+                    <ons-col align="top" size="20">{{item.trackPrice}}</ons-col>
+                </ons-row>
+             </ons-list-item>
+
+        </ons-list>
+     </ons-scroller>
+</ons-page>

@@ -1,0 +1,12 @@
+<ons-page class="center" ng-controller="PlayMediaCtrl">
+    <blockquote>
+        <p>Now Playing {{kind | capitalize}} - {{title | capitalize}}</p>
+
+        <small>by <cite>{{artist}}</cite></small>
+    </blockquote>
+    <video id="vid" width="320" height="240" video-loader autoplay controls>
+        {{url2}}
+        <source id="vidsrc" ng-src="url2" type="video/mp4">
+    </video>
+
+</ons-page>

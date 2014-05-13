@@ -1,0 +1,124 @@
+.pad {
+    padding-top: 7px;
+}
+.range, .topcoat-range {
+    margin-top: 5px;
+}
+.bgMain {
+    left-margin: -20px;
+    background-image: url('../images/itunes.png');
+    background-size: 250px;
+    background-repeat: no-repeat;
+    background-position:center;
+}
+.topcoat-navigation-bar {
+    font-family: 'Helvetica Neue', Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-weight: 400;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    white-space: nowrap;
+    overflow: hidden;
+    word-spacing: 0;
+    padding: 0;
+    margin: 0;
+    font: inherit;
+    color: inherit;
+    background: transparent;
+    border: none;
+    cursor: default;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    z-index: 2;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 auto;
+    -moz-box-flex: 0;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    height: 44px;
+    padding-left: 0;
+    padding-right: 0;
+    background: #212226;
+    color: #fff;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-bottom: 1px solid rgba(0,0,0,0);
+    font-weight: 400;
+    width: 100%;
+}
+.topcoat-navigation-bar__line-height {
+    line-height: 44px;
+    padding-bottom: 0;
+    padding-top: 0;
+}
+.topcoat-navigation-bar__bg {
+    background: #212226;
+}
+.topcoat-navigation-bar__item,
+.topcoat-navigation-bar__left,
+.topcoat-navigation-bar__right,
+.topcoat-navigation-bar__center {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    padding: 0;
+    margin: 0;
+    font: inherit;
+    color: inherit;
+    background: transparent;
+    border: none;
+    line-height: 1;
+    vertical-align: top;
+    float: left;
+}
+.topcoat-navigation-bar__left {
+    width: 25%;
+    text-align: left;
+}
+.topcoat-navigation-bar__right {
+    width: 25%;
+    text-align: right;
+}
+.topcoat-navigation-bar__center {
+    width: 50%;
+    text-align: center;
+}
+.topcoat-navigation-bar__center:first-child:last-child {
+    width: 100%;
+}
+.topcoat-navigation-bar__title {
+    padding: 0;
+    margin: 0;
+    font: inherit;
+    color: inherit;
+    background: transparent;
+    border: none;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    line-height: 44px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    
+}
+.topcoat-button {
+    padding: 1px 10px;
+}
+
+.blue {
+    background-color: #1284ff;
+    height: 30px;
+    color: #000000;
+}
